@@ -11,8 +11,9 @@ image:
 nameOverride: ""
 fullnameOverride: ""
 service:
-  type: ClusterIP
+  type: NodePort       # <--- Change ici
   port: 80
+  nodePort: 31000      # <--- Ajoute ceci (entre 30000 et 32767)
 livenessProbe:
   initialDelaySeconds: 15
   periodSeconds: 20
