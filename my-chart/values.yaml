@@ -51,3 +51,6 @@ ingress:
 autoscaling:
   enabled: false
   # autres valeurs si nécessaires
+
+serviceMonitor:
+  enabled: true
