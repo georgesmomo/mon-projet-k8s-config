@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   repository: georgesmomo/node-hello-world # Ce sera le nom de notre image
   pullPolicy: IfNotPresent
-  # Overridden by the CI/CD pipeline
+  # Overridden by the CI/CD pipeline !
   tag: ""
 
 nameOverride: ""
