@@ -1,18 +1,17 @@
-{{- if.Values.serviceMonitor.enabled }}
+{{- if .Values.serviceMonitor.enabled }}
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  name: {{ include "my-chart.fullname". }}
+  name: {{ include "my-chart.fullname" . }}
   labels:
-    {{- include "my-chart.labels". | nindent 4 }}
-    # Ce label est crucial pour que le Prometheus Operator le découvre
+    {{- include "my-chart.labels" . | nindent 4 }}
     release: prometheus
 spec:
   selector:
     matchLabels:
-      {{- include "my-chart.selectorLabels". | nindent 10 }}
+      {{- include "my-chart.selectorLabels" . | nindent 10 }}
   endpoints:
-  - port: http
-    path: /metrics
-    interval: 15s
+    - port: http
+      path: /metrics
+      interval: 15s
 {{- end }}
