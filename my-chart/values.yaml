@@ -45,3 +45,7 @@ persistence:
   # existingClaim: ""
   accessMode: ReadWriteOnce
   size: 1Gi
+
+serviceAccount:
+  create: false
+  name: ""
