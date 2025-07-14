@@ -49,3 +49,10 @@ persistence:
 serviceAccount:
   create: false
   name: ""
+
+ingress:
+  enabled: false
+  # Autres valeurs d’ingress si nécessaire, par ex :
+  # hosts:
+  #   - host: example.com
+  #     paths: ["/"]
