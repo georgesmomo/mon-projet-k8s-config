@@ -7,7 +7,7 @@ image:
   repository: georgesmomo/node-hello-world # Ce sera le nom de notre image
   pullPolicy: IfNotPresent
   # Overridden by the CI/CD pipeline
-  tag: "1.0.0-develop.46.dd164c4"
+  tag: "1.0.0-develop.47.13521b7"
 nameOverride: ""
 fullnameOverride: ""
 service:
